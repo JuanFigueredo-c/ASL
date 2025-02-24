@@ -1,0 +1,94 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           asl
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/asl#readme>
+homepage:       https://github.com/githubuser/asl#readme
+bug-reports:    https://github.com/githubuser/asl/issues
+author:         Juan Bautista Figueredo
+maintainer:     juan.b.figueredo01@gmail.com
+copyright:      2024 Author name here
+license:        BSD-3-Clause
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/asl
+
+library
+  exposed-modules:
+      AST
+      Common
+      Error
+      Eval
+      Lib
+      Monads
+      Parse
+      PPAsl
+      Process
+      Typechecker
+  other-modules:
+      Paths_asl
+  autogen-modules:
+      Paths_asl
+  hs-source-dirs:
+      src
+  default-extensions:
+      TupleSections
+      MultiWayIf
+      LambdaCase
+      DataKinds
+      PolyKinds
+      FlexibleInstances
+      FlexibleContexts
+      StandaloneDeriving
+      GADTs
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -O2
+  build-depends:
+      ansi-terminal ==0.11.*
+    , array
+    , base >=4.7 && <5
+    , containers
+    , directory
+    , gloss
+    , mtl
+    , pretty ==1.1.*
+    , transformers
+  default-language: Haskell2010
+
+executable asl-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_asl
+  autogen-modules:
+      Paths_asl
+  hs-source-dirs:
+      app
+  default-extensions:
+      TupleSections
+      MultiWayIf
+      LambdaCase
+      DataKinds
+      PolyKinds
+      FlexibleInstances
+      FlexibleContexts
+      StandaloneDeriving
+      GADTs
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      OpenGLRaw
+    , ansi-terminal ==0.11.*
+    , array
+    , asl
+    , base >=4.7 && <5
+    , containers
+    , directory
+    , gloss
+    , mtl
+    , pretty ==1.1.*
+    , transformers
+  default-language: Haskell2010

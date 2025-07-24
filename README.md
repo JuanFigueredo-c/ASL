@@ -1,4 +1,4 @@
-ASL - Animation Specification Language
+# ASL - Animation Specification Language
 
 Juan Bautista Figueredo
 

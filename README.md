@@ -1,7 +1,4 @@
-# Trabajo Práctico Final - ASL
-
-**Análisis de Lenguajes de Programación**
-
+ASL - Animation Specification Language
 
 Juan Bautista Figueredo
 
